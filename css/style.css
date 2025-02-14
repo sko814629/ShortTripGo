@@ -129,10 +129,10 @@ position: relative;
     content: '';
     transform: translateY(-50%);
     }
-    .rening-heading h2 span{
+    .rening-heading h2 span , .explore h2 span{
         position: relative;
     }
-    .rening-heading h2 span::before{
+    .rening-heading h2 span::before , .explore h2 span::before{
     position: absolute;
     left: 0;
     bottom:8px;
@@ -157,4 +157,58 @@ position: relative;
      content: '';
     
     }
+    .navbar-collapse.show{
+        background-color:#fff;
+    }
+    .trip-card-img{
+        position: relative;
+        text-align: center;
+    }
+    .trip-card-img::before {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        content: "\f0d1"; 
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900; 
+        color: #6fb134;
+        font-size: 30px;
+        transform: translate(-50% , -50%);
+    }
+   .trip-card .trip-card-info h4{
+  min-height: 50px;
+   }
+   .camper-content{
+    background-color: #293122;
+    text-align: center;
+    color: #fff;
+   }
+   .camper-description ul{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+   }
+   .camper-description ul li{
     
+   }
+   .camper-description ul li a{
+   text-decoration: none;
+   color: #fff; 
+   border-right: 1px solid #fff;
+   display: inline-block;
+    padding-inline: 5px;
+   }
+     .camper-description ul li:last-child a{
+        border-right:none;
+    }
+    .slick-prev{
+        left:10px;
+z-index: 999;
+    }
+    .slick-next{
+        right: 10px;
+        z-index: 999;
+    }
