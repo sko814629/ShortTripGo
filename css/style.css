@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Jost", serif;
+}
+/* html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+} */
+header{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    z-index: 1000;
+ 
+}
+.banner {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    background-image: url('/img/dung-anh-HfQaLIV_3Xg-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+}
+.banner::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    content: '';
+
+    background-color: rgba(24, 32, 18, 0.95);  
+    background-image: url('/img/slbg5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 1;
+}
+.logo{
+    max-width: 140px;
+}
+.banner-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    color: #fff;
+}
+
+
+.review-description p {
+    margin-bottom: 0px;
+  
+}
+.review{
+    display: flex;
+}
+.review-images{
+    display: flex;
+}
+.review-content {
+    display: flex; 
+    align-items: center;
+    margin-left: 15px;
+    position: relative;
+    z-index: 9;
+}
+.review-images img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid  #fff ;
+}
+.review-stars i{
+    color: chocolate;
+}
+.review-images .review-img{
+    margin-right: -10px;
+}
+.review-content .review-description p {
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+    padding-inline: 10px;
+}
+.booking-container {
+    transform: translateY(-50px);
+    position: relative;
+    z-index: 2;
+}
+.booking-label span{
+    font-size: 35px;
+    color: #6fb134;
+    font-weight: 600;
+}
+.booking-btn {
+background-color:#6fb134 ;
+padding: 16px;
+}
+.form-select{
+    padding: 16px;   
+}
+.banner-heading > p{
+position: relative;
+}
+.banner-heading > p::before{
+    position: absolute;
+    left: -30px;
+    top:50%;
+    width: 30px;
+    height: 6px;
+    background-color: chocolate;
+    content: '';
+    transform: translateY(-50%);
+    }
+    .rening-heading h2 span{
+        position: relative;
+    }
+    .rening-heading h2 span::before{
+    position: absolute;
+    left: 0;
+    bottom:8px;
+    width: 100%;
+    height:10px;
+    background-color: rgb(221, 146, 93);
+    content: '';
+    opacity: 0.6;
+    }
+    .rening-heading h5{
+        position: relative;
+        padding-inline: 10px;
+        margin-bottom:50px;
+    }
+    .rening-heading h5::before{
+     position: absolute;
+     left: 0;
+     top:0;
+     width: 5px;
+     height: 100%;
+     background-color: #6fb134;
+     content: '';
+    
+    }
+    
